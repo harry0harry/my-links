@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Linktree pessoal e privado - HARRY@HARRY">
+    <meta name="description" content="Linktree pessoal e privado - HARRY">
     <title>HARRY@HARRY - Links</title>
     <style>
         :root {
@@ -208,8 +208,8 @@
             let senhaDigitada = prompt("Por favor, digite a senha para acessar o link:");
 
             if (senhaDigitada === senhaCorreta) {
-                // Abre o link em uma nova aba (_blank) para simular o comportamento original
-                window.open(linkDestino, '_blank');
+                // REDIRECIONA NA MESMA ABA: Isso evita o bloqueio de pop-ups do navegador
+                window.location.href = linkDestino;
             } else if (senhaDigitada !== null) {
                 alert("Senha incorreta! Acesso negado.");
             }
