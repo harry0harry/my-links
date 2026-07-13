@@ -181,13 +181,18 @@
             <img src="assets/perfil.png" alt="Foto de perfil de HARRY@HARRY" class="profile-img">
             <h1 class="username">HARRY@HARRY</h1>
             <p class="bio">DEV por Hobby. I LOVE LINUX.</p>
-            <p class="info">🎂 10/11 - 🏳️‍🌈 Gay - 💍 Namorando</p>
+            <p class="info">🎂 10/11 - 🏳️‍🌈 Gay - 🍻 Solteiro</p>
         </header>
 
         <main class="links">
+
             <a href="#" onclick="verificarSenha(event, 'https://wa.me/5565981249941')" class="link-btn">WhatsApp</a>
 
-            <a href="#" class="link-btn disabled">EM BREVE...</a>
+            <a href="https://www.instagram.com/king_harry_?igsh=aHAydG84dnc0MnV5" target="_blank" rel="noopener noreferrer" class="link-btn">IG  @KING_HARRY_</a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link-btn disabled"> - EM BREVE - </a>
+
+            <a href="#" onclick="verificarSenha(event, 'LINK AQUI')" class="link-btn disabled"> - EM BREVE - </a>
         </main>
     </div>
 
@@ -198,9 +203,9 @@
             event.preventDefault();
 
             // Defina sua senha aqui
-            const senhaCorreta = "10112007";
+            const senhaCorreta = "134679";
 
-            let senhaDigitada = prompt("Por favor, digite a senha para acessar o WhatsApp:");
+            let senhaDigitada = prompt("Por favor, digite a senha para acessar o link:");
 
             if (senhaDigitada === senhaCorreta) {
                 // Abre o link em uma nova aba (_blank) para simular o comportamento original
